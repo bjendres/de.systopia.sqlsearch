@@ -36,7 +36,7 @@
       <a onclick='CRM.help("{ts domain="de.systopia.moregreetings"}Instructions{/ts}", {literal}{"id":"id-token-help","file":"CRM\/moregreetings\/Form\/Settings"}{/literal}); return false;' href="#" title="{ts domain="de.systopia.moregreetings"}Help{/ts}" class="helpicon">&nbsp;</a>
     </div>
     <div class="content">
-      <code>FROM civicrm_contact contact_a</code>
+      <code>FROM civicrm_contact contact_a</code><br/>
       {$form.search_from.html}
     </div>
     <div class="clear"></div>
