@@ -18,7 +18,7 @@
 <div class="sql-search">
   <!--div class="crm-section">
     <div class="label">{$form.search_select.label}
-      <a onclick='CRM.help("{ts domain="de.systopia.moregreetings"}Instructions{/ts}", {literal}{"id":"id-token-help","file":"CRM\/moregreetings\/Form\/Settings"}{/literal}); return false;' href="#" title="{ts domain="de.systopia.moregreetings"}Help{/ts}" class="helpicon">&nbsp;</a>
+      <a onclick='CRM.help("{ts domain="de.systopia.sqlsearch"}Instructions{/ts}", {literal}{"id":"id-token-help","file":"CRM\/moregreetings\/Form\/Settings"}{/literal}); return false;' href="#" title="{ts domain="de.systopia.sqlsearch"}Help{/ts}" class="helpicon">&nbsp;</a>
     </div>
     <div class="content">
       <code>
@@ -33,7 +33,7 @@
 
   <div class="crm-section">
     <div class="label">{$form.search_from.label}
-      <a onclick='CRM.help("{ts domain="de.systopia.moregreetings"}Instructions{/ts}", {literal}{"id":"id-token-help","file":"CRM\/moregreetings\/Form\/Settings"}{/literal}); return false;' href="#" title="{ts domain="de.systopia.moregreetings"}Help{/ts}" class="helpicon">&nbsp;</a>
+      <a onclick='CRM.help("{ts domain="de.systopia.sqlsearch"}Instructions{/ts}", {literal}{"id":"id-token-help","file":"CRM\/moregreetings\/Form\/Settings"}{/literal}); return false;' href="#" title="{ts domain="de.systopia.sqlsearch"}Help{/ts}" class="helpicon">&nbsp;</a>
     </div>
     <div class="content">
       <code>FROM civicrm_contact contact_a</code><br/>
@@ -44,11 +44,19 @@
 
   <div class="crm-section">
     <div class="label">{$form.search_where.label}
-      <a onclick='CRM.help("{ts domain="de.systopia.moregreetings"}Instructions{/ts}", {literal}{"id":"id-token-help","file":"CRM\/moregreetings\/Form\/Settings"}{/literal}); return false;' href="#" title="{ts domain="de.systopia.moregreetings"}Help{/ts}" class="helpicon">&nbsp;</a>
+      <a onclick='CRM.help("{ts domain="de.systopia.sqlsearch"}Instructions{/ts}", {literal}{"id":"id-token-help","file":"CRM\/moregreetings\/Form\/Settings"}{/literal}); return false;' href="#" title="{ts domain="de.systopia.sqlsearch"}Help{/ts}" class="helpicon">&nbsp;</a>
     </div>
     <div class="content">{$form.search_where.html}</div>
     <div class="clear"></div>
   </div>
+
+  <!--div class="crm-section">
+    <div class="label">{$form.search_having.label}
+      <a onclick='CRM.help("{ts domain="de.systopia.sqlsearch"}Instructions{/ts}", {literal}{"id":"id-token-help","file":"CRM\/moregreetings\/Form\/Settings"}{/literal}); return false;' href="#" title="{ts domain="de.systopia.sqlsearch"}Help{/ts}" class="helpicon">&nbsp;</a>
+    </div>
+    <div class="content">{$form.search_having.html}</div>
+    <div class="clear"></div>
+  </div-->
 </div>
 
 <!-- move to the right spot -->
