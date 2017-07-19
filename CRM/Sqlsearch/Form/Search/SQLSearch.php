@@ -122,9 +122,10 @@ class CRM_Sqlsearch_Form_Search_SQLSearch extends CRM_Contact_Form_Search_Custom
   function sql($selectClause, $offset = 0, $rowcount = 0, $sort = NULL, $includeContactIDs = FALSE, $groupBy = NULL) {
     $groupBy = 'GROUP BY contact_a.id';
 
-    // if (!empty($this->_formValues['search_having'])) {
-    //   $groupBy .= ' HAVING ' . html_entity_decode($this->_formValues['search_having']);
-    // }
+    // add having clause
+    if (!empty($this->_formValues['search_having'])) {
+      $groupBy .= ' HAVING ' . html_entity_decode($this->_formValues['search_having']);
+    }
 
     $sql = parent::sql($selectClause, $offset, $rowcount, $sort, $includeContactIDs, $groupBy);
     // error_log($sql);

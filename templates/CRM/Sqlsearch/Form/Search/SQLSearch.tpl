@@ -50,13 +50,13 @@
     <div class="clear"></div>
   </div>
 
-  <!--div class="crm-section">
+  <div class="crm-section">
     <div class="label">{$form.search_having.label}
       <a onclick='CRM.help("{ts domain="de.systopia.sqlsearch"}Instructions{/ts}", {literal}{"id":"id-token-help","file":"CRM\/moregreetings\/Form\/Settings"}{/literal}); return false;' href="#" title="{ts domain="de.systopia.sqlsearch"}Help{/ts}" class="helpicon">&nbsp;</a>
     </div>
     <div class="content">{$form.search_having.html}</div>
     <div class="clear"></div>
-  </div-->
+  </div>
 </div>
 
 <!-- move to the right spot -->
