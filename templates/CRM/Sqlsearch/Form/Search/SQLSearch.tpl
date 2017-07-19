@@ -60,6 +60,18 @@
 </div>
 
 <!-- move to the right spot -->
+{literal}
 <script type="text/javascript">
 cj("div.crm-submit-buttons").first().after(cj("div.sql-search"));
+
+function decodeHTML(selector) {
+  var raw = cj(selector).val();
+  var decoded = cj('<div/>').html(raw).text();
+  cj(selector).val(decoded);
+}
+// decode HTML entities
+decodeHTML("#search_having");
+decodeHTML("#search_from");
+decodeHTML("#search_where");
 </script>
+{/literal}
