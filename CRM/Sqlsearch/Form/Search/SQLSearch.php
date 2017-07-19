@@ -113,15 +113,14 @@ class CRM_Sqlsearch_Form_Search_SQLSearch extends CRM_Contact_Form_Search_Custom
    */
   function all($offset = 0, $rowcount = 0, $sort = NULL, $includeContactIDs = FALSE, $justIDs = FALSE) {
     // delegate to $this->sql(), $this->select(), $this->from(), $this->where(), etc.
-    return $this->sql($this->select(), $offset, $rowcount, $sort, $includeContactIDs, NULL);
+    return $this->sql($this->select(), $offset, $rowcount, $sort, $includeContactIDs, 'GROUP BY contact_a.id');
+
   }
 
   /**
    * override parent's function for debugging
    */
   function sql($selectClause, $offset = 0, $rowcount = 0, $sort = NULL, $includeContactIDs = FALSE, $groupBy = NULL) {
-    $groupBy = 'GROUP BY contact_a.id';
-
     // add having clause
     if (!empty($this->_formValues['search_having'])) {
       $groupBy .= ' HAVING ' . html_entity_decode($this->_formValues['search_having']);
